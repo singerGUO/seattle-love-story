@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+/*****************************HEADER STYLES*****************************/
+/* Background Image */
+.back-image {
+  background: url(background2.jpg);
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  
+  /* filter: blur(2px);
+  -webkit-filter: blur(3px); */
+}
+
+h1 {
+  text-align: center;
+  font-size: 61px;
+  font-weight: 300;
+  margin: 80px 0 25px;
+  color: #2c3e50;
+}
+
+h1 span {
+  font-weight: 500;
+}
+
+
+h2 {
+  text-align: center;
+  color: #bdc3c7;
+  font-weight: 500;
+  display: inline;
+}
+
+/*****************************FORM STYLES*****************************/
+
+
+input {
+  width: 70%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #34495e;
+  outline: none;
+  font: 300 28px 'Ubuntu', sans-serif;
+  padding: 20px;
+  color: #34495e;
+}
+
+/*****************************LIST STYLES*****************************/
+ul {
+  width: 800px;
+  margin: 3px auto;
+}
+
+li {
+  border: 1px  blue;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 20px;
+  color: #34495e;
+  transition: all .3s ease;
+}
+
+li:hover {
+  background: hotpink;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+
+
+
+li span #delete {
+  float: right;
+  color: mediumvioletred;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+
+
+
+button, button span {
+  border-radius: 1.5em;
+}
+
+button {
+  background-color: #55abee;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  margin: 1.5em;
+  display: inline-block;
+  font-weight: bold;
+}
+
+button span {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  transition: all 0.1s linear;
+}
+
+button:hover span {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:active span {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button span:focus {
+  outline: 0;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:disabled:hover span,
+button:disabled:active span {
+  background-color: transparent;
+}
+
+
+
+/* ADD THESE */
+* { 
+  box-sizing: border-box; 
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+/* Sign up botton */
+.signup-button {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: inline;
+}
+.signup-page-button1 {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+.signup-page-button2 {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+
+.hide{
+  display: none;
+}
+
+.signup-background {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
+}
+
+.signup-text{
+  background-color: #f8f9fa;
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 60%;
+  left: 50%;
+  z-index: 3;
+  margin-top: -150px;
+  margin-left: -200px;
+}
+
+#signupbox p {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+/* ------------     for index.html page ------------ */
+.defined-contain {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: .8rem;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 2.5em;
+  height: 1.5em;
+  content: "";
+  background-size: 100% 100%;
+}
+
+/* Index.html Slides */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  margin-left: auto; 
+  margin-right:auto; 
+  display:block;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #f8f9fa;
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px black;
+  padding-top: 0;
+}
+
+.carousel-caption h2 {
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #f8f9fa;
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 15px black;
+  padding-bottom: 1rem;
+}
+
+/* navigation bar */
+.icon {
+  height: 40px; 
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.7px;
+}
+
+#navbar {
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+.head {
+  position: fixed;
+  z-index: 1111;
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+
+.divider {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+/* description part in index.html */
+.description-paragraph {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 0%;
+}
+
+.title {
+  font-size: 300%;
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #f8f9fa;
+  text-shadow: 2px 2px 35px black;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.des-paragraph {
+  font-size: 130%;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+/* footer */
+footer {
+  font-family: 'Baloo Bhaijaan', cursive;
+  bottom: 0; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f8f9fa;
+  color: darkolivegreen;
+  text-shadow: darkcyan;
+}
+
+/* all the hover */
+.carousel-caption h1:hover {
+  color:rgb(112, 138, 68);
+}
+
+.carousel-caption h2:hover {
+  color: rgb(112, 138, 68);
+}
+
+.carousel-caption a:hover, .des-paragraph a:hover{
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  color: rgb(51, 65, 27);
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: rgb(112, 138, 68);
+}
+
+.card:hover, .col-4:hover, .fab:hover, #contact .col-xs-12:hover, #description .col-xs-12:hover {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+
+
+
+/* media query */
+@media (max-width: 768px) {
+  .carousel-caption {
+      top: 45%;
+  }
+
+  .carousel-caption h1 {
+      font-size: 350%;
+  }
+  
+  .carousel-caption h2 {
+      font-size: 140%;
+      font-weight: 400;
+      padding-bottom: .25rem;
+  }
+
+  .title, .creator-title {
+    font-size: 250%;
+  }
+
+  .subtitle {
+    font-size: 120%;
+  }
+
+  .des-paragraph {
+    font-size: 125%;
+  }
+
+  .back-image, .back-image-contact, .back-image-seattle {
+    display: none;
+  }
+
+  header {
+    position: relative;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-nav.ml-auto{
+    text-align: right;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+      top: 40%;
+  }
+
+  .carousel-caption h1 {
+      font-size: 300%;
+  }
+  
+  .carousel-caption h2 {
+      font-size: 110%;
+  }
+
+  .title, .creator-title {
+    font-size: 190%;
+  }
+
+  .subtitle {
+    font-size: 95%;
+  }
+
+  .des-paragraph {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 411px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+      font-size: 170%;
+  }
+
+  .carousel-caption h2 {
+      font-size: 90%;
+  }
+
+  .title, .creator-title {
+    font-size: 140%;
+  }
+
+  .subtitle {
+    font-size: 70%;
+  }
+
+  .des-paragraph {
+    font-size: 70%;
+  }
+}

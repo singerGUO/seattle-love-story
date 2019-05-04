@@ -1,0 +1,11 @@
+{
+  "root": "build/",
+  "routes": {
+    "/**": "index.html"
+  },
+  "proxies": {
+    "/api/todos": {
+      "origin": "https://todo-server-es.herokuapp.com/api/todos"
+    }
+  }
+}
